@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Study Dashboard</h1>
+    <div>
+
+        <div class="info">
+            <h2>Hello Bachooo 😉</h2>
+            <p id="dt"></p>
+            <p id="tm2"></p>
+            <h3>Total Subjects : <span id="no">0</span></h3>
+
+        </div>
+
+    </div>
+    <div class="box">
+
+        <h2>Add Subject</h2>
+        <input type="text" id="sub" placeholder="Subject">
+        <select id="day">
+
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday(for topper(extra class))</option>
+        </select>
+
+        <input type="time" id="tm">
+        <button onclick="add()">Add</button>
+    </div>
+
+    <div class="box">
+        <input type="text" id="sea" placeholder="Search Subject..." onkeyup="find()">
+        <div id="list"></div>
+
+    </div>
+
+    <div class="box">
+        <h2>Assignments</h2>
+        <input type="text" id="as" placeholder="Assignment Name">
+        <input type="date" id="dd">
+        <button onclick="addAs()">Add Assignment</button>
+        <div id="asList"></div>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Attendance Calculator</h2>
+        <input type="number" id="at" placeholder="Classes Attended">
+        <input type="number" id="tt" placeholder="Total Classes">
+        <button onclick="cal()">Calculate</button>
+        <h3 id="ans"></h3>
+    </div>
+
+
+    <footer>
+        Made by Aanchal © 2026
+    </footer>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
